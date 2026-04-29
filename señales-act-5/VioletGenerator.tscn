@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rw5k0bkdhimg"]
+
+[ext_resource type="Texture2D" uid="uid://bq0xv03b3dljn" path="res://block_violet.png" id="1_w63yp"]
+[ext_resource type="Script" uid="uid://c1pb3jtaxm0qk" path="res://block_violet.gd" id="2_llu21"]
+
+[node name="Node2D" type="Node2D" unique_id=812791066]
+
+[node name="BlockViolet" type="Sprite2D" parent="." unique_id=1506042167 groups=["blocks"]]
+position = Vector2(899, 189.00002)
+scale = Vector2(1.2890625, 1.2578125)
+texture = ExtResource("1_w63yp")
+script = ExtResource("2_llu21")
+
+[node name="Button" type="Button" parent="." unique_id=995316825]
+offset_left = 818.0
+offset_top = 109.0
+offset_right = 982.0
+offset_bottom = 270.0
+
+[connection signal="button_down" from="Button" to="BlockViolet" method="_on_button_button_down"]
